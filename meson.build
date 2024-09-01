@@ -228,7 +228,7 @@ libdsm_headers = [
 
 install_headers(libdsm_headers, subdir: 'bdsm')
 
-includes = include_directories('.', 'contrib', 'include', 'compat')
+includes = include_directories('.', 'contrib', 'include', 'compat', '/opt/homebrew/include')
 
 add_project_arguments('-DHAVE_CONFIG_H=1', language: ['c'])
 
